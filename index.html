@@ -220,7 +220,7 @@ function processPayment(paymentData) {
   // @todo pass payment token to your gateway to process payment
   paymentToken = paymentData.paymentMethodData.tokenizationData.token;
   let result = document.getElementById("result");
-  result.innerText = paymentData;
+  result.innerText = paymentToken;
 }
 </script>
 </head>
