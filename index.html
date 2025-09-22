@@ -1,5 +1,6 @@
 <html>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 <script>
 /**
  * Define the version of the Google Pay API referenced when creating your
@@ -220,7 +221,7 @@ function processPayment(paymentData) {
   // @todo pass payment token to your gateway to process payment
   paymentToken = paymentData.paymentMethodData.tokenizationData.token;
   let result = document.getElementById("result");
-  result.innerText = paymentToken;
+  result.innerText = JSON.stringify(paymentData);
 }
 </script>
 </head>
