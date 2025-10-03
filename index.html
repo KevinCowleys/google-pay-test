@@ -237,7 +237,7 @@ function updateAuthMethod() {
 	<label for="authToggle">Select Auth Method:</label>
 	<select id="authToggle" onChange="updateAuthMethod()">
 		<option value="PAN_ONLY">PAN_ONLY</option>
-		<option value="CRYPTOGRAM_3DS">CRYPTOGRAM_3DS</option>
+		<option value="CRYPTOGRAM_3DS" selected>CRYPTOGRAM_3DS</option>
 	</select>
 	<script async src="https://pay.google.com/gp/p/js/pay.js"></script>
 	<button onClick="onGooglePayLoaded()">Click</button>
